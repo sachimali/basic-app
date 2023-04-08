@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "639293330434",
+    "project_id": "vcomplaint-a1cb8",
+    "storage_bucket": "vcomplaint-a1cb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639293330434:android:cf76a699cec5095ee8c31b",
+        "android_client_info": {
+          "package_name": "com.example.vcomplaint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639293330434-54fftu419o4rnje8ttcc8gba16vo1c36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vcomplaint",
+            "certificate_hash": "ce60d684f2fac2859e8dd3b3f7c974933112cf2a"
+          }
+        },
+        {
+          "client_id": "639293330434-2jsh6fscvvh6fr3achs7s5ks0f196f8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDD5nub8Bs0cjizH1QdbhNdKNqoDDho4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639293330434-2jsh6fscvvh6fr3achs7s5ks0f196f8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
