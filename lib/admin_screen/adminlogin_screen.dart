@@ -1,8 +1,7 @@
-// ignore: unused_import
-import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:vcomplaint/admin_screen/adminhome_screen.dart';
-import 'package:vcomplaint/utils/color_utils.dart';
+//import 'package:vcomplaint/utils/color_utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../reusable_widgets/reusable_widget.dart';
@@ -31,18 +30,13 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [
-            hexStringToColour("edf5ef"),
-            hexStringToColour("3da854"),
-            hexStringToColour("3fd15e")
-          ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+          color: Colors.white, // Set the background color to white
           child: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(20, 50, 20, 0),
               child: Column(
                 children: <Widget>[
-                  logoWidget("assets/images/logo1.jpeg", width: 240),
+                  logoWidget("assets/images/atharva.png", width: 240),
                   const SizedBox(
                     height: 30,
                   ),

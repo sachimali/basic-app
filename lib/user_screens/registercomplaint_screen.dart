@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:profanity_filter/profanity_filter.dart';
 
 class RegisterComplaintScreen extends StatefulWidget {
   const RegisterComplaintScreen({Key? key}) : super(key: key);
@@ -39,6 +40,8 @@ class _RegisterComplaintScreenState extends State<RegisterComplaintScreen> {
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter complaint title';
+                  } else if (ProfanityFilter().hasProfanity(value)) {
+                    return 'Please refrain from using offensive language.';
                   }
                   return null;
                 },
@@ -57,6 +60,8 @@ class _RegisterComplaintScreenState extends State<RegisterComplaintScreen> {
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter complaint description';
+                  } else if (ProfanityFilter().hasProfanity(value)) {
+                    return 'Please refrain from using offensive language.';
                   }
                   return null;
                 },
